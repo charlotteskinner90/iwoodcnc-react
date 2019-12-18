@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faGithub, faLinkedin, faWordpress, faFacebook, faInstagram, faEtsy, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram, faEtsy, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
 
 export default class Footer extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class Footer extends Component {
                 <li><a href="/"><FontAwesomeIcon icon={faEtsy} /></a></li>
               </ul>
               <ul className="copyright">
-                <li>© Copyright 2019 Charlotte Skinner</li>
+                <li>© Copyright 2019 iWoodCNC</li>
               </ul>
             </div>
             <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open" /></a></div>
