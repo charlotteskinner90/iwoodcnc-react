@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faGithub, faLinkedin, faWordpress, faFacebook, faInstagram, faEtsy, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
-
+import { faInstagram, faEtsy, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
 export default class Header extends Component {
   render() {
     let resumeData = this.props.resumeData;
