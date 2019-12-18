@@ -28,7 +28,8 @@ export default class Header extends Component {
               <ul className="social">
                 <li><a href="/"><FontAwesomeIcon icon={faFacebookSquare} /></a></li>
                 <li><a href="/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                <li><a href="/"><FontAwesomeIcon icon={faEtsy} /></a></li>              </ul>
+                <li><a href="/"><FontAwesomeIcon icon={faEtsy} /></a></li>
+              </ul>
             </div>
           </div>
           <p className="scrolldown">
