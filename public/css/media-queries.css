@@ -48,6 +48,8 @@
    #about .contact-details { width: 50%; }
    #about .download { width: 50%; }
    #about .about-item {
+      margin-left: 20px;
+      margin-right: 20px;
       margin-bottom: 20px;
       padding: 10px 20px;
    }
@@ -56,6 +58,8 @@
 
    #services .services-item {
       margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
       padding: 10px 20px;
    }
    /* Resume Section

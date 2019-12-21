@@ -568,8 +568,7 @@ call-to-action .button {
    outline: none;
    font-size: 20px;
    transition: 0.4s;
-   margin-top: 20px;
-   margin-bottom: 0px;
+   margin: 20px 10px 0px 10px;
 }
 #materials .active, .accordion-materials:hover {
    border-radius: 10px 10px 0px 0px;
