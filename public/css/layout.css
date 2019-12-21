@@ -167,7 +167,7 @@ ul#nav li.current a { color: #8e8be8; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #ebeeee;
+   background: #ffffff;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -185,6 +185,28 @@ ul#nav li.current a { color: #8e8be8; }
    color: #95A3A3;
 }
 
+#about .about-item {
+   min-height: 250px;
+   border-radius: 30px;
+   width: 32%;
+   margin: 5px;
+   text-align: center;
+}
+#about .green-blob {
+   background-color: #e9f9ec;
+}
+#about .pink-blob {
+   background-color: #ffebf4;
+}
+#about .blue-blob {
+   background-color: #e5eef2;
+}
+#about H5 {
+   margin-bottom: 20px;
+}
+#about p {
+   color: #000000;
+}
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
@@ -470,7 +492,7 @@ call-to-action .button {
 /* Services */
 
 #services {
-   background: #ebeeee;
+   background: #ffffff;
    padding-top: 90px;
    padding-bottom: 60px;
 }
@@ -483,12 +505,40 @@ call-to-action .button {
    margin-bottom: 48px;
    color: #95A3A3;
 }
+#services .services-item {
+   min-height: 250px;
+   border-radius: 30px;
+   width: 24%;
+   margin: 5px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+#services .green-blob {
+   background-color: #e9f9ec;
+}
+#services .pink-blob {
+   background-color: #ffebf4;
+}
+#services .blue-blob {
+   background-color: #e5eef2;
+}
+#services .lilac-blob {
+   background-color: #d0cfec;
+}
+#services H5 {
+   margin-bottom: 20px;
+}
+#services p {
+   color: #000000;
+}
 /* Materials */
 
 #materials {
    background: #ffffff;
    padding-top: 90px;
-   padding-bottom: 60px;
+   padding-bottom: 150px;
 }
 
 #materials h1 {
@@ -499,15 +549,71 @@ call-to-action .button {
    margin-bottom: 48px;
    color: #95A3A3;
 }
+
+/* Accordion */
+#materials .accordion-container {
+   display: flex;
+   align-items: center;
+   margin-top: 40px;
+   flex-direction: column;
+}
+#materials .accordion-materials {
+   color: #444;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   border: none;
+   border-radius: 10px;
+   text-align: center;
+   outline: none;
+   font-size: 20px;
+   transition: 0.4s;
+   margin-top: 20px;
+   margin-bottom: 0px;
+}
+#materials .active, .accordion-materials:hover {
+   border-radius: 10px 10px 0px 0px;
+}
+ 
+#materials .panel {
+   padding: 0 18px;
+   background-color: white;
+   max-height: 0;
+   width: 100%;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+   border-radius: 0px 0px 10px 10px;
+   box-shadow: 0px 3px 5px 0px rgba(60,72,89,0.56);
+}
+
+#materials .pale-green {
+   background-color: #e9f9ec;
+}
+#materials .pale-pink {
+   background-color: #ffebf4;
+}
+#materials .pale-blue {
+   background-color: #e5eef2;
+}
+#materials .pale-lilac {
+   background-color: #d0cfec;
+}
+#materials p {
+   padding-top: 20px;
+}
+
 /* ------------------------------------------------------------------
 /* g. Testimonials
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-   background-color: #1F1F1F;
+   /* background-color: #1F1F1F;
+   background-size: cover !important;
+	-webkit-background-size: cover !important; */
+   background-attachment: fixed;
+   background: #ffffff url(../images/testimonial-bg.png) no-repeat top center;;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
-   background-attachment: fixed;
 
    position: relative;
    min-height: 200px;
@@ -546,7 +652,7 @@ call-to-action .button {
 }
 #testimonials blockquote:before { content: none; }
 #testimonials blockquote p {
-   font-family: 'opensans-light', sans-serif;
+   font-family: 'opensans-regular', sans-serif;
    padding: 0;
    font-size: 24px;
    line-height: 48px;
@@ -653,7 +759,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
+   background: #ffffff;
    padding-top: 96px;
    padding-bottom: 102px;
    color: #636363;
@@ -661,13 +767,13 @@ call-to-action .button {
 #contact .section-head { margin-bottom: 42px; }
 
 #contact a, #contact a:visited  { color: #d0cfec; }
-#contact a:hover, #contact a:focus { color: #fff; }
+#contact a:hover, #contact a:focus { color: #000000; }
 
 #contact h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
-   color: #EBEEEE;
+   color: #000000;
    margin-bottom: 6px;
 }
 #contact h1 span { display: none; }
@@ -679,12 +785,12 @@ call-to-action .button {
    line-height: 72px;
    text-align: left;
    float: left;
-   color: #ebeeee;
+   color: #000000;
 }
 
 #contact h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
-   color: #EBEEEE;
+   color: #000000;
    margin-bottom: 6px;
 }
 #contact p.lead {
@@ -699,7 +805,7 @@ call-to-action .button {
 #contact label {
    font: 15px/24px 'opensans-bold', sans-serif;
    margin: 12px 0;
-   color: #EBEEEE;
+   color: #000000;
 	display: inline-block;
 	float: left;
    width: 26%;
@@ -708,8 +814,8 @@ call-to-action .button {
 #contact textarea,
 #contact select {
    padding: 18px 20px;
-	color: #eee;
-	background: #373233;
+	color: #000000;
+	/* background: #000000; */
 	margin-bottom: 42px;
 	border: 0;
 	outline: none;
@@ -720,14 +826,14 @@ call-to-action .button {
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
-	color: #fff;
+	color: #000000;
 	background-color: #d0cfec;
 }
 #contact button.submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color:#fff;
-   background: #0D0D0D;
+	color:#000000;
+   background: #d0cfec;
 	border: none;
    cursor: pointer;
    height: auto;
@@ -737,7 +843,7 @@ call-to-action .button {
 }
 #contact button.submit:hover {
 	color: #0D0D0D;
-	background: #fff;
+	background: #7b77ed;
 }
 #contact span.required {
 	color: #11ABB0;
