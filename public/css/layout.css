@@ -182,7 +182,7 @@ ul#nav li.current a { color: #8e8be8; }
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   color: #000000;
 }
 
 #about .about-item {
@@ -275,7 +275,7 @@ ul#nav li.current a { color: #8e8be8; }
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   color: #000000;
 }
 
 /* Portfolio Content */
@@ -503,7 +503,7 @@ call-to-action .button {
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   color: #000000;
 }
 #services .services-item {
    min-height: 250px;
@@ -547,7 +547,7 @@ call-to-action .button {
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   color: #000000;
 }
 
 /* Accordion */
