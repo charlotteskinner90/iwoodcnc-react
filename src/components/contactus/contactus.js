@@ -53,7 +53,7 @@ export default class ContactUs extends Component {
               <Formik
                 initialValues={this.state}
                 onSubmit={async () => {
-                  await this.sendMail()
+                  // await this.sendMail()
                   this.resetForm()
                 }}
               >
