@@ -555,7 +555,7 @@ call-to-action .button {
 #materials .accordion-container {
    display: flex;
    align-items: center;
-   margin-top: 40px;
+   margin: 40px 20px 20px 20px;
    flex-direction: column;
 }
 #materials .accordion-materials {
