@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faEtsy, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
 export default class Header extends Component {
   render() {
-    let resumeData = this.props.resumeData;
     return (
       <React.Fragment>
         <header id="home">
@@ -23,8 +22,6 @@ export default class Header extends Component {
           <div className="row banner">
             <div className="banner-text">
               <img className="logo" src="images/iwoodcnc.png" alt="iwoodcnc logo" />
-              <h1 className="responsive-headline">{resumeData.name}</h1>
-              <h3>Brighton based <span>{resumeData.role}</span></h3>
               <ul className="social">
                 <li><a href="/"><FontAwesomeIcon icon={faFacebookSquare} /></a></li>
                 <li><a href="/"><FontAwesomeIcon icon={faInstagram} /></a></li>

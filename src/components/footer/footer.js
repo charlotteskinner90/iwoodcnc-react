@@ -15,7 +15,7 @@ export default class Footer extends Component {
                 <li><a href="/"><FontAwesomeIcon icon={faEtsy} /></a></li>
               </ul>
               <ul className="copyright">
-                <li>© Copyright 2019 iWoodCNC</li>
+                <li>© Copyright 2020 iwoodCNC</li>
               </ul>
             </div>
             <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open" /></a></div>
