@@ -8,19 +8,31 @@ export default class Materials extends Component {
             <div className="twelve columns collapsed">
               <h1>Materials</h1>
               <div className="accordion-container">
-                <button className="accordion-materials pale-lilac">Aluminium</button>
+                <button className="accordion-materials pale-lilac">Metals</button>
                 <div className="panel">
                   <p>
-                    Using our specialist aluminium cutting tools we create and manufacture parts for signs, components 
-                    and finishing touches from a range of non – ferrous metals including brass and copper
+                    We stock a wide range of specialist metal cutting bits that are capable of delivering accurate and repeatable finishes. We can cut metals up to a thickness of 6mm. Sheet metals are commonly used for signage, home décor and other smaller decorative items/finishes. We can cut a range of non-ferrous metals that include the following:
                   </p>
+                  <div className="panel-list">
+                    <ul>
+                      <li>
+                        Aluminium
+                      </li>
+                      <li>
+                        Copper
+                      </li>
+                      <li>
+                        Brass
+                      </li>
+                    </ul>
+                  </div>
                 </div>
 
                 <button className="accordion-materials pale-green">Hardwoods</button>
                 <div className="panel">
                     <p>
                       Cutting hardwoods is what were best known for. We adjust all of our cutting parameters to achieve 
-                      the cleanest sharpest edges for a variety of wood types and density’s. Our hardwood selection is as follows:
+                      the cleanest sharpest edges for a variety of wood types and densities. Our hardwood selection is as follows:
                     </p>
                     <div className="panel-list">
                       <ul>
@@ -57,20 +69,31 @@ export default class Materials extends Component {
                       </ul>
                     </div>
                 </div>
-                <button className="accordion-materials pale-pink">Softwoods</button>
+                <button className="accordion-materials pale-pink">Sheet Materials</button>
                 <div className="panel">
                     <p>
-                      Our machinery is capable of cutting parts to a maximum size of 1250 x 800 and can cut a variety 
-                      of softwood sheet materials such as Interior and exterior strains of Birch Ply. Many of our gallery 
-                      items have been made using a particular grade of Birch plywood noted as BB/BB
+                      Our machinery is capable of cutting parts to a maximum size of 1250mm x 800mm x 27mm (In some cases however we have been able to cut up to a thickness of 40mm)  We commonly cut sheet materials for both commercial and personal clientele over a wide range of applications. Our state of the art compression cutters ensure that your parts are crisp and accurate. Our range of Sheet materials is listed as follows:
                     </p>
-                </div>
-                <button className="accordion-materials pale-blue">MDF</button>
-                <div className="panel">
-                    <p>
-                      MDF is a popular material to cut with. Since it’s typically an affordable material 
-                      to trial ideas and assembly’s as well as being relatively easy to paint and finish. 
-                    </p>
+                    <div className="panel-list">
+                    <ul>
+                      <li>
+                        MDF (Regular/Moisture Resistant)
+                      </li>
+                      <li>
+                        Plywood (Birch, Spruce, Marine)
+                      </li>
+                      <li>
+                        Acrylics (Cast, Extruded)
+                      </li>
+                      <li>
+                        High Density Foam
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    We also have a variety of coloured and metal faced veneers of which we can press onto a number of our
+                    sheet materials. Please enquire for more details regarding specific colours and finishes.
+                  </p>
                 </div>
             </div>
             </div>

@@ -89,12 +89,11 @@ export default class ContactUs extends Component {
             </div>
             <aside className="four columns footer-widgets">
               <div className="widget widget_contact">
-                <h4>Address and Phone</h4>
+                <h4>Address</h4>
                 <p className="address">
                   iwoodCNC<br />
-                  Brighton <br />
-                  UK<br />
-                  <span>01234567890</span>
+                  Brighton, UK <br />
+                  iwoodcnc@outlook.com<br />
                 </p>
               </div>
             </aside>
