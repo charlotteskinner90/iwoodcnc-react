@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
 import { Formik } from 'formik';
+import Recaptcha from "react-recaptcha";
 
 export default class ContactUs extends Component {
   constructor(props) {
     super(props);
     this.state = { subject: '', message: '', name: '', email: '' };
     this.handleChange = this.handleChange.bind(this);
+    this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
+
     // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(param, event) {
     this.setState({ [param]: event.target.value})
+  }
+
+  recaptchaLoaded() {
+    console.log('captcha successfully loaded')
   }
   
   sendMail(contactForm) {
@@ -22,7 +29,7 @@ export default class ContactUs extends Component {
       "project_request": message,
     };
     
-    emailjs.send('gmail_portfolio','online_resume', templateParams, 'user_A6sfgBTpaPNhTyScId1iJ')
+    emailjs.send('gmail_portfolio','iwoodcnc_email', templateParams, 'user_A6sfgBTpaPNhTyScId1iJ')
       .then((response) => {
         alert("Thank you for your enquiry. I will be in touch soon.", response);
         console.log('SUCCESS!', response.status, response.text);
@@ -53,7 +60,7 @@ export default class ContactUs extends Component {
               <Formik
                 initialValues={this.state}
                 onSubmit={async () => {
-                  // await this.sendMail()
+                  await this.sendMail()
                   this.resetForm()
                 }}
               >
@@ -76,7 +83,13 @@ export default class ContactUs extends Component {
                         <label htmlFor="message">Message <span className="required">*</span></label>
                         <textarea cols={50} rows={15} id="message" name="message" onChange={this.handleChange.bind(this, 'message')} value={this.state.message} />
                       </div>
-                      <div>
+                      <div className="recaptcha-container">
+                        <Recaptcha
+                          sitekey="6Le4ht8UAAAAAAKWLfWS5UyE5LYQgK8th9bySjQI"
+                          render="explicit"
+                          onloadCallback={this.recaptchaLoaded}
+                          className="g-recaptcha"
+                        />
                         <button type="submit" className="submit">Submit</button>
                         <span id="image-loader">
                           <img alt="" src="images/loader.gif" />

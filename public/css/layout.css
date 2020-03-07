@@ -879,6 +879,11 @@ call-to-action .button {
    top: 17px;
 }
 
+#g-recaptcha {
+   margin-left: 26%;
+   margin-bottom: 36px;
+}
+
 
 /* Twitter Feed */
 #twitter {
