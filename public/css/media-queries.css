@@ -9,6 +9,9 @@
       letter-spacing: -1px;
       margin: 0 auto 12px auto;
    }
+   #contact h5 {
+      font: 14px/22px 'opensans-bold', sans-serif;            
+   }
 
 }
 
@@ -98,6 +101,9 @@
       line-height: 66px;
    }
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
+   #contact h5 {
+      font: 14px/22px 'opensans-bold', sans-serif;            
+   }
 
 
 }
@@ -317,8 +323,10 @@
       font: 16px/24px 'opensans-bold', sans-serif;            
       text-align: center;   
       margin-bottom: 30px;
-      text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-   }  
+   }
+   #contact h5 {
+      font: 14px/22px 'opensans-bold', sans-serif;            
+   }
    #contact h1 span { display: block; }
    #contact .header-col { padding-top: 0; }
    #contact .header-col h1:before { content: none;	}

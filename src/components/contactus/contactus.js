@@ -43,9 +43,9 @@ export default class ContactUs extends Component {
       <React.Fragment>
         <section id="contact">
           <div className="row section-head">
-            {/* <div className="two columns header-col"> */}
-              <h1 style={{ color: '#000000' }}>Get In Touch.</h1>
-            {/* </div> */}
+            <h1 style={{ color: '#000000', marginBottom: '15px' }}>Get In Touch.</h1>
+            <h5 style={{ textAlign: 'justify'}}>Due to the nature of our workspace it’s usually best to contact us directly through the website.</h5>
+            <h5>We usually respond to enquiries within 1 working day.</h5>
           </div>
           <div className="row">
             <div className="eight columns">

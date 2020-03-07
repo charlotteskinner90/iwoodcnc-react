@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faEtsy, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 export default class Footer extends Component {
   render() {
@@ -10,9 +11,9 @@ export default class Footer extends Component {
           <div className="row">
             <div className="twelve columns">
               <ul className="social-links">
-                <li><a href="/"><FontAwesomeIcon icon={faFacebookSquare} /></a></li>
-                <li><a href="/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                <li><a href="/"><FontAwesomeIcon icon={faEtsy} /></a></li>
+              <li><a href="https://www.facebook.com/Iwoodcnc-103032651310709"><FontAwesomeIcon icon={faFacebookSquare} /></a></li>
+                <li><a href="https://www.instagram.com/iwoodcnc"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                <li><a className="smoothscroll" href="#contact"><FontAwesomeIcon icon={faEnvelope} /></a></li>
               </ul>
               <ul className="copyright">
                 <li>© Copyright 2020 iwoodCNC</li>
