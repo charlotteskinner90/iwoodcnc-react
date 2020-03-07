@@ -15,15 +15,33 @@ export default class Testimonials extends Component {
                     <li>
                       <blockquote>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          “The quality and craftsmanship is really impressive. Fantastic attentive service all round”
                         </p>
+                        <cite>Joy Voysey, Hove UK</cite>
                       </blockquote>
                     </li>
                     <li>
                       <blockquote>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          “An amazing custom job on my set of bookcase speakers. Slick quality work”
                         </p>
+                        <cite>Dominic Duff, Worthing UK</cite>
+                      </blockquote>
+                    </li>
+                    <li>
+                      <blockquote>
+                        <p>
+                          “Makes perfect use of the space available. Brilliant finishes"
+                        </p>
+                        <cite>Robert Poffel, Hove UK</cite>
+                      </blockquote>
+                    </li>
+                    <li>
+                      <blockquote>
+                        <p>
+                          “Excellent service. Really clear, helpful and informative. Will definitely come back”
+                        </p>
+                        <cite>Scott Daniels, Brighton UK</cite>
                       </blockquote>
                     </li>
                   </ul>

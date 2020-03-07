@@ -10,7 +10,8 @@
       margin: 0 auto 12px auto;
    }
    #contact h5 {
-      font: 14px/22px 'opensans-bold', sans-serif;            
+      font: 14px/22px 'opensans-bold', sans-serif;         
+      text-align: justify;   
    }
 
 }
@@ -102,7 +103,8 @@
    }
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
    #contact h5 {
-      font: 14px/22px 'opensans-bold', sans-serif;            
+      font: 14px/22px 'opensans-bold', sans-serif;          
+      text-align: justify;  
    }
 
 
@@ -293,7 +295,10 @@
 
    /* Testimonials Section
    ----------------------------------------------------------------------- */
-   #testimonials .text-container { text-align: center; }
+   #testimonials .text-container {
+      text-align: center;
+      min-height: 350px;
+   }
    #testimonials h1 {
       font: 16px/24px 'opensans-bold', sans-serif;
       text-align: center;
@@ -302,7 +307,6 @@
    }
    #testimonials h1 span { display: block; }
    #testimonials .header-col h1:before { content: none; }
-   #testimonials blockquote { padding-bottom: 24px; }
    #testimonials blockquote p {
       font-size: 20px;
       line-height: 42px;      
@@ -325,7 +329,9 @@
       margin-bottom: 30px;
    }
    #contact h5 {
-      font: 14px/22px 'opensans-bold', sans-serif;            
+      font: 14px/22px 'opensans-bold', sans-serif;     
+      text-align: justify;
+      margin: 0 20px;
    }
    #contact h1 span { display: block; }
    #contact .header-col { padding-top: 0; }

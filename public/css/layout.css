@@ -624,19 +624,16 @@ call-to-action .button {
 	-webkit-background-size: cover !important;
 
    position: relative;
-   min-height: 200px;
+   min-height: 250px;
    width: 100%;
    overflow: hidden;
-}
-#testimonials .text-container {
-   padding-top: 96px;
-   padding-bottom: 66px;
 }
 #testimonials h1 {
    font: 18px/24px 'opensans-bold', sans-serif;   
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
+   margin-top: 20px;
 }
 #testimonials h1 span { display: none; }
 #testimonials .header-col { padding-top: 9px; }
@@ -650,7 +647,10 @@ call-to-action .button {
    float: left;
    color: #fff;
 }
-
+#testimonials .text-container {
+   padding-top: 10px;
+   padding-bottom: 40px;
+}
 /*	Blockquotes */
 #testimonials blockquote {
    margin: 0 0px 30px 0px;
