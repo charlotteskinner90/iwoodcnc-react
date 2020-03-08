@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
 import { Formik } from 'formik';
 import Recaptcha from "react-recaptcha";
+import { showToastBL } from './toasts';
 
 export default class ContactUs extends Component {
   constructor(props) {
@@ -9,8 +10,6 @@ export default class ContactUs extends Component {
     this.state = { subject: '', message: '', name: '', email: '' };
     this.handleChange = this.handleChange.bind(this);
     this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
-
-    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(param, event) {
@@ -31,11 +30,9 @@ export default class ContactUs extends Component {
     
     emailjs.send('iwoodcnc_hotmail','iwoodcnc_email', templateParams, 'user_12rt9wgPiS9FSrYaUQfaP')
       .then((response) => {
-        alert("Thank you for your enquiry. I will be in touch soon.", response);
-        console.log('SUCCESS!', response.status, response.text);
+        showToastBL("Thank you for your enquiry. I will be in touch soon.");
       }, (err) => {
-        alert("Oops! Something isn't right, please try sending again.", err);
-        console.log('FAILED...', err);
+        showToastBL("Oops! Something isn't right, please try sending again.");
       });
   }
 
@@ -56,7 +53,6 @@ export default class ContactUs extends Component {
           </div>
           <div className="row">
             <div className="eight columns">
-              {/* form */}
               <Formik
                 initialValues={this.state}
                 onSubmit={async () => {
@@ -98,7 +94,7 @@ export default class ContactUs extends Component {
                     </fieldset>
                   </form>
                 )}
-              </Formik>{/* Form End */}
+              </Formik>
             </div>
             <aside className="four columns footer-widgets">
               <div className="widget widget_contact">

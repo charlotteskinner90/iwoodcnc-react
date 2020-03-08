@@ -8,11 +8,13 @@ import Footer from './components/footer/footer';
 import resumeData from './components/header/resumeData';
 import Services from './components/services/services';
 import Materials from './components/materials/materials';
+import { ToastContainer } from 'react-toastify';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <ToastContainer newestOnTop />
         <Header resumeData={resumeData} />
         <About />
         <Gallery />
