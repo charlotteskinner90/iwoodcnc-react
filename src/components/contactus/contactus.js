@@ -19,6 +19,12 @@ export default class ContactUs extends Component {
   recaptchaLoaded() {
     console.log('captcha successfully loaded')
   }
+
+  resetForm() {
+    this.setState({
+      subject: '', message: '', name: '', email: ''
+    })
+  }
   
   sendMail(contactForm) {
     const { name, email, message } = this.state
@@ -31,15 +37,10 @@ export default class ContactUs extends Component {
     emailjs.send('iwoodcnc_hotmail','iwoodcnc_email', templateParams, 'user_12rt9wgPiS9FSrYaUQfaP')
       .then((response) => {
         showToastBL("Thank you for your enquiry. I will be in touch soon.");
+        this.resetForm()
       }, (err) => {
         showToastBL("Oops! Something isn't right, please try sending again.");
       });
-  }
-
-  resetForm() {
-    this.setState({
-      subject: '', message: '', name: '', email: ''
-    })
   }
 
   render() {
@@ -57,7 +58,6 @@ export default class ContactUs extends Component {
                 initialValues={this.state}
                 onSubmit={async () => {
                   await this.sendMail()
-                  this.resetForm()
                 }}
               >
                 {({ handleSubmit }) => (
