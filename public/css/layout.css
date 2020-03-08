@@ -486,7 +486,7 @@ call-to-action .button {
    color: #0D0D0D;
 }
 #call-to-action p span {
-	font-family: 'opensans-semibold', sans-serif; 
+	font-family: 'Nunito', sans-serif; 
 	color: #D8D8D8;
 }
 
@@ -499,7 +499,7 @@ call-to-action .button {
 }
 
 #services h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
+   font: 15px/24px 'Nunito', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
@@ -660,7 +660,7 @@ call-to-action .button {
 }
 #testimonials blockquote:before { content: none; }
 #testimonials blockquote p {
-   font-family: 'opensans-regular', sans-serif;
+   font-family: 'Nunito', sans-serif;
    padding: 0;
    font-size: 24px;
    line-height: 48px;
