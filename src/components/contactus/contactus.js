@@ -29,7 +29,7 @@ export default class ContactUs extends Component {
       "project_request": message,
     };
     
-    emailjs.send('gmail_portfolio','iwoodcnc_email', templateParams, 'user_A6sfgBTpaPNhTyScId1iJ')
+    emailjs.send('iwoodcnc_hotmail','iwoodcnc_email', templateParams, 'user_12rt9wgPiS9FSrYaUQfaP')
       .then((response) => {
         alert("Thank you for your enquiry. I will be in touch soon.", response);
         console.log('SUCCESS!', response.status, response.text);
@@ -106,7 +106,7 @@ export default class ContactUs extends Component {
                 <p className="address">
                   iwoodCNC<br />
                   Brighton, UK <br />
-                  iwoodcnc@outlook.com<br />
+                  iwoodcnc@hotmail.com<br />
                 </p>
               </div>
             </aside>
