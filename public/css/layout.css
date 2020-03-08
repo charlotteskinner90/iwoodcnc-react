@@ -40,14 +40,16 @@ header .banner {
 header .banner-text { width: 100%; }
 header .banner-text .logo { width: 300px; }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
+   font: 90px/1.1em 'Nunito-bold', sans-serif;
+   font-weight: bold;
    color: #000000;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'opensans-semibold', sans-serif;
+   font: 18px/1.9em 'Nunito-bold', sans-serif;
+   font-weight: bold;
    color: #000000;
    margin: 0 auto;
    width: 70%;
@@ -177,7 +179,8 @@ ul#nav li.current a { color: #8e8be8; }
 #about a:hover, #about a:focus { color: #11ABB0; }
 
 #about h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
+   font: 15px/24px 'Nunito-bold', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
@@ -223,7 +226,8 @@ ul#nav li.current a { color: #8e8be8; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
+   font: 18px/24px 'Nunito-bold', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
@@ -271,7 +275,8 @@ ul#nav li.current a { color: #8e8be8; }
    padding-bottom: 60px;
 }
 #portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
+   font: 15px/24px 'Nunito-bold', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
@@ -443,7 +448,8 @@ ul#nav li.current a { color: #8e8be8; }
    padding-bottom: 48px;
 }
 #call-to-action h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
+   font: 18px/24px 'Nunito-bold', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
@@ -499,7 +505,8 @@ call-to-action .button {
 }
 
 #services h1 {
-   font: 15px/24px 'Nunito', sans-serif;
+   font: 15px/24px 'Nunito-bold', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
@@ -543,7 +550,8 @@ call-to-action .button {
 }
 
 #materials h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
+   font: 15px/24px 'Nunito-bold', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
@@ -629,7 +637,8 @@ call-to-action .button {
    overflow: hidden;
 }
 #testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;   
+   font: 18px/24px 'Nunito-bold', sans-serif;   
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
@@ -778,7 +787,8 @@ call-to-action .button {
 #contact a:hover, #contact a:focus { color: #000000; }
 
 #contact h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
+   font: 18px/24px 'Nunito-bold', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #000000;
