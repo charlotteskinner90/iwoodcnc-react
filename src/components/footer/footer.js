@@ -15,7 +15,7 @@ export default function Footer() {
           </ul>
           <ul className="copyright">
             <li>© Copyright 2020 iwoodCNC</li>
-            <li>Website by CSkinner Website Designs ©</li>
+            <li>Website by CODECSS ©</li>
           </ul>
         </div>
         <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open" /></a></div>

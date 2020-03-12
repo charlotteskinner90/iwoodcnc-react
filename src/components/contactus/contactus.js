@@ -36,7 +36,7 @@ export default class ContactUs extends Component {
     
     emailjs.send('iwoodcnc_hotmail','iwoodcnc_email', templateParams, 'user_12rt9wgPiS9FSrYaUQfaP')
       .then((response) => {
-        showToastBL("Thank you for your enquiry. I will be in touch soon.");
+        showToastBL("Thank you for your enquiry. We will be in touch soon.");
         this.resetForm()
       }, (err) => {
         showToastBL("Oops! Something isn't right, please try sending again.");
@@ -65,11 +65,11 @@ export default class ContactUs extends Component {
                     <fieldset>
                       <div>
                         <label htmlFor="name">Name <span className="required">*</span></label>
-                        <input type="text" size={35} id="name" name="name" onChange={this.handleChange.bind(this, 'name')} value={this.state.name} />
+                        <input type="text" size={35} id="name" name="name" required onChange={this.handleChange.bind(this, 'name')} value={this.state.name} />
                       </div>
                       <div>
                         <label htmlFor="email">Email <span className="required">*</span></label>
-                        <input type="text" size={35} id="email" name="email" onChange={this.handleChange.bind(this, 'email')} value={this.state.email} />
+                        <input type="text" size={35} id="email" name="email" required onChange={this.handleChange.bind(this, 'email')} value={this.state.email} />
                       </div>
                       <div>
                         <label htmlFor="subject">Subject</label>
@@ -77,7 +77,7 @@ export default class ContactUs extends Component {
                       </div>
                       <div>
                         <label htmlFor="message">Message <span className="required">*</span></label>
-                        <textarea cols={50} rows={15} id="message" name="message" onChange={this.handleChange.bind(this, 'message')} value={this.state.message} />
+                        <textarea cols={50} rows={15} id="message" name="message" required onChange={this.handleChange.bind(this, 'message')} value={this.state.message} />
                       </div>
                       <div className="recaptcha-container">
                         <Recaptcha
