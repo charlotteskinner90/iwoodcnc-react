@@ -636,7 +636,7 @@ ul#nav li.current a { color: #8e8be8; }
 footer {
    padding-top: 48px;
    margin-bottom: 48px;
-   color: #303030;
+   color: #525252;
    font-size: 14px;
    text-align: center;
    position: relative;
@@ -682,6 +682,7 @@ footer .social-links li {
 
 footer .social-links li:first-child { margin-left: 0; }
 footer .social-links li a:hover { color: #7b77ed; }
+footer .copyright li a:hover { color: #7b77ed; }
 
 #go-top {
 	position: absolute;

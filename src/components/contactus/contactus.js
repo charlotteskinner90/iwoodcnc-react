@@ -27,10 +27,11 @@ export default class ContactUs extends Component {
   }
   
   sendMail(contactForm) {
-    const { name, email, message } = this.state
+    const { name, email, subject, message } = this.state
     const templateParams = {
       "from_name": name,
       "from_email": email,
+      "from_subject": subject,
       "project_request": message,
     };
     
@@ -72,8 +73,8 @@ export default class ContactUs extends Component {
                         <input type="text" size={35} id="email" name="email" required onChange={this.handleChange.bind(this, 'email')} value={this.state.email} />
                       </div>
                       <div>
-                        <label htmlFor="subject">Subject</label>
-                        <input type="text" size={35} id="subject" name="subject" onChange={this.handleChange.bind(this, 'subject')} value={this.state.subject} />
+                        <label htmlFor="subject">Subject <span className="required">*</span></label>
+                        <input type="text" size={35} id="subject" name="subject" required onChange={this.handleChange.bind(this, 'subject')} value={this.state.subject} />
                       </div>
                       <div>
                         <label htmlFor="message">Message <span className="required">*</span></label>
