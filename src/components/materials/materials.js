@@ -82,7 +82,11 @@ export default function Materials() {
             </button>
             <div className="panel">
                 <p>
-                  Our machinery is capable of cutting parts to a maximum size of 1250mm x 800mm x 27mm (In some cases however we have been able to cut up to a thickness of 40mm)  We commonly cut sheet materials for both commercial and personal clientele over a wide range of applications. Our state of the art compression cutters ensure that your parts are crisp and accurate. Our range of Sheet materials is listed as follows:
+                Our machinery is capable of cutting parts to a maximum size of 1200mm x 700mm x
+                27mm (In some cases however we have been able to cut up to a thickness of 40mm) We
+                commonly cut sheet materials for both commercial and personal clientele over a wide
+                range of applications. Our state of the art compression cutters ensure that your parts are
+                crisp and accurate. Our range of Sheet materials is listed as follows:
                 </p>
                 <div className="panel-list">
                 <ul>

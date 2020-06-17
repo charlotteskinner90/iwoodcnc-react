@@ -110,6 +110,26 @@ const musicImages = [
   "musicPlaque/music2.jpg"
 ]
 
+const fenceImages = [
+  "fence/fence1.jpg",
+  "fence/fence2.jpg"
+]
+
+const rickImages = [
+  "rick/rick1.jpg",
+  "rick/rick2.jpg"
+]
+
+const iwoodcncImages = [
+  "iwoodcnc/iwoodcnc1.jpg",
+  "iwoodcnc/iwoodcnc2.jpg"
+]
+
+const pocketImages = [
+  "pocket/pocket1.jpg",
+  "pocket/pocket2.jpg"
+]
+
 export default function Gallery() {
   const [openFirst, setOpenFirst] = useState(false)
   const [openSecond, setOpenSecond] = useState(false)
@@ -123,6 +143,10 @@ export default function Gallery() {
   const [openTen, setOpenTen] = useState(false)
   const [openEleven, setOpenEleven] = useState(false)
   const [openTwelve, setOpenTwelve] = useState(false)
+  const [openThirteen, setOpenThirteen] = useState(false)
+  const [openFourteen, setOpenFourteen] = useState(false)
+  const [openFifteen, setOpenFifteen] = useState(false)
+  const [openSixteen, setOpenSixteen] = useState(false)
 
 
   return (
@@ -131,6 +155,128 @@ export default function Gallery() {
         <div className="twelve columns collapsed">
           <h1>Gallery</h1>
           <div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
+
+          <div className="columns portfolio-item">
+              <div className="overlay-item">
+                <a onClick={() => setOpenFourteen(true)}>
+                  <img src={`images/${iwoodcncImages[0]}`} className="item-img"/>
+                  <div className="overlay">
+                    <div className="portfolio-item-meta">
+                      <p style={{ color: '#ffffff' }} >
+                      Here we have our custom made
+                      “iwoodcnc” advertisement sign
+                      board.
+                      <br></br>
+                      <br></br>
+                      Pocketed lettering with a navy blue
+                      fill. All finished with several coats of
+                      hard wearing varnish, making it easy
+                      to clean and long lasting. 
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <Modal styles={{ modal: styles.container}} closeIconSize={20} open={openFourteen} onClose={() => setOpenFourteen(false)} center>
+                  <Swiper {...params}>
+                  {iwoodcncImages.map((iwoodcnc, index) => (
+                    <img key={`corner_${index}`} src={`images/${iwoodcnc}`} className="item-img img-small"/>
+                  ))}
+                  </Swiper>
+                  <h6 style={{ textAlign: 'center', marginTop: '20px'}}>
+                  Here we have our custom made
+                  “iwoodcnc” advertisement sign
+                  board. 
+                  <br></br>
+                  <br></br>
+                  Pocketed lettering with a navy blue
+                  fill. All finished with several coats of
+                  hard wearing varnish, making it easy
+                  to clean and long lasting. 
+                  </h6>
+                </Modal>
+              </div>
+            </div>
+
+          <div className="columns portfolio-item">
+              <div className="overlay-item">
+                <a onClick={() => setOpenThirteen(true)}>
+                  <img src={`images/${rickImages[0]}`} className="item-img"/>
+                  <div className="overlay">
+                    <div className="portfolio-item-meta">
+                      <p style={{ color: '#ffffff' }} >
+                      Here we have a custom carved “Rick
+                      and Morty” plaque from the adult
+                      swim hit TV series. Custom V carved
+                      text from solid white American oak
+                      wood. Stunning natural grain
+                      qualities with precision detail. 
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <Modal styles={{ modal: styles.container}} closeIconSize={20} open={openThirteen} onClose={() => setOpenThirteen(false)} center>
+                  <Swiper {...params}>
+                  {rickImages.map((rick, index) => (
+                    <img key={`corner_${index}`} src={`images/${rick}`} className="item-img img-small"/>
+                  ))}
+                  </Swiper>
+                  <h6 style={{ textAlign: 'center', marginTop: '20px'}}>
+                    Here we have a custom carved “Rick
+                    and Morty” plaque from the adult
+                    swim hit TV series. Custom V carved
+                    text from solid white American oak
+                    wood. Stunning natural grain
+                    qualities with precision detail. 
+                  </h6>
+                </Modal>
+              </div>
+            </div>
+
+            <div className="columns portfolio-item">
+              <div className="overlay-item">
+                <a onClick={() => setOpenFifteen(true)}>
+                  <img src={`images/${fenceImages[0]}`} className="item-img"/>
+                  <div className="overlay">
+                    <div className="portfolio-item-meta">
+                      <p style={{ color: '#ffffff' }} >
+                      One of our home visit projects
+                      includes this charming little white
+                      picket fence.
+                      <br></br>
+                      <br></br>
+                      CNC cut parts for lovely uniform
+                      pickets with clean rounded tops.
+                      This pretty little fence has caused
+                      quite a positive stir in the area,
+                      being the first of it’s kind on the
+                      road in question.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <Modal styles={{ modal: styles.container}} closeIconSize={20} open={openFifteen} onClose={() => setOpenFifteen(false)} center>
+                  <Swiper {...params}>
+                  {fenceImages.map((fence, index) => (
+                    <img key={`corner_${index}`} src={`images/${fence}`} className="item-img img-small"/>
+                  ))}
+                  </Swiper>
+                  <h6 style={{ textAlign: 'center', marginTop: '20px'}}>
+                    One of our home visit projects
+                    includes this charming little white
+                    picket fence.
+                    <br></br>
+                    <br></br>
+                    CNC cut parts for lovely uniform
+                    pickets with clean rounded tops.
+                    This pretty little fence has caused
+                    quite a positive stir in the area,
+                    being the first of it’s kind on the
+                    road in question.
+                  </h6>
+                </Modal>
+              </div>
+            </div>
+
             <div className="columns portfolio-item">
               <div className="overlay-item">
                 <a onClick={() => setOpenFirst(true)}>
@@ -569,6 +715,33 @@ export default function Gallery() {
                   natural matte look.
                   CNC cut parts for precise and accurate fit.
                   Hand assembled and hand finished.   
+                  </h6>
+                </Modal>
+              </div>
+            </div>
+
+            <div className="columns portfolio-item">
+              <div className="overlay-item">
+                <a onClick={() => setOpenSixteen(true)}>
+                  <img src={`images/${pocketImages[0]}`} className="item-img"/>
+                  <div className="overlay">
+                    <div className="portfolio-item-meta">
+                      <p style={{ color: '#ffffff' }} >
+                      A close up example of some pocket
+                      lettering for a custom cut sign.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <Modal styles={{ modal: styles.container}} closeIconSize={20} open={openSixteen} onClose={() => setOpenSixteen(false)} center>
+                  <Swiper {...params}>
+                  {pocketImages.map((pocket, index) => (
+                    <img key={`corner_${index}`} src={`images/${pocket}`} className="item-img img-small"/>
+                  ))}
+                  </Swiper>
+                  <h6 style={{ textAlign: 'center', marginTop: '20px'}}>
+                  A close up example of some pocket
+                  lettering for a custom cut sign.  
                   </h6>
                 </Modal>
               </div>
